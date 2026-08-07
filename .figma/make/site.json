@@ -1,0 +1,11 @@
+{
+  "title": "portfolioshreya",
+  "description": "Preserves uploaded images exactly as provided, ensuring no redesign or alteration for accurate visual representation and reliable use.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
