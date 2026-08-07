@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import imgHalo from '@/project1.png'
 import imgGpay from '@/project2.svg'
 import Reveal from './Reveal'
@@ -44,16 +43,13 @@ const PROJECTS: Project[] = [
   },
 ]
 
-function ProjectCard({ project, focused }: { project: Project; focused: boolean }) {
+function ProjectCard({ project }: { project: Project }) {
   return (
     <article
       id={`project-${project.id}`}
-      className={`group relative scroll-mt-32 transition-opacity duration-500 ${
-        focused ? 'opacity-100' : 'opacity-70 hover:opacity-100'
-      }`}
+      className="group relative scroll-mt-32"
     >
-      {/* glass information card — sits on the upper-left and the image tucks under it */}
-      <div className="relative z-10 w-[88%] rounded-[20px] border border-white/65 bg-white/72 p-5 shadow-[0_10px_30px_rgba(13,151,255,0.18)] backdrop-blur-[16px] transition-transform duration-500 group-hover:-translate-y-[3px] sm:w-[46%] sm:p-6">
+      <div className="relative z-10 w-[88%] rounded-[20px] border border-white/65 bg-white/72 p-5 shadow-[0_10px_30px_rgba(13,151,255,0.18)] backdrop-blur-[16px] transition-transform duration-500 transform-gpu group-hover:-translate-y-[3px] sm:w-[46%] sm:p-6">
         <h3 className="font-serif text-[clamp(1.25rem,2.2vw,1.625rem)] leading-[1.15] text-ink">
           {project.title}
         </h3>
@@ -74,14 +70,13 @@ function ProjectCard({ project, focused }: { project: Project; focused: boolean 
           href={project.url}
           target="_blank"
           rel="noreferrer"
-          className="mt-5 inline-flex h-9 items-center gap-1.5 rounded-[33px] bg-ink px-4 text-[13px] text-white transition-transform duration-300 hover:-translate-y-0.5"
+          className="mt-5 inline-flex h-9 items-center gap-1.5 rounded-[33px] bg-ink px-4 text-[13px] text-white transition-transform duration-300 transform-gpu hover:-translate-y-0.5"
         >
           View Project
           <ExternalArrowIcon className="size-4" />
         </a>
       </div>
 
-      {/* Image container: removed padding inside so the image stretches edge-to-edge */}
       <div
         className="-mt-9 h-[280px] overflow-hidden rounded-[22px] sm:-mt-12 sm:h-[380px]"
         style={{ backgroundColor: project.tint }}
@@ -89,7 +84,7 @@ function ProjectCard({ project, focused }: { project: Project; focused: boolean 
         <img
           src={project.image}
           alt={project.alt}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          className="h-full w-full object-cover transition-transform duration-700 transform-gpu group-hover:scale-[1.03]"
         />
       </div>
     </article>
@@ -97,8 +92,6 @@ function ProjectCard({ project, focused }: { project: Project; focused: boolean 
 }
 
 export default function Projects() {
-  const [focus, setFocus] = useState(PROJECTS[0].id)
-
   return (
     <section className="relative mx-auto w-full max-w-[1200px] px-5 sm:px-8">
       <SectionLabel id="projects">Projects</SectionLabel>
@@ -106,7 +99,7 @@ export default function Projects() {
       <div className="mt-6 grid gap-10 lg:grid-cols-2 lg:gap-8">
         {PROJECTS.map((project, index) => (
           <Reveal key={project.id} delay={index * 90}>
-            <ProjectCard project={project} focused={focus === project.id} />
+            <ProjectCard project={project} />
           </Reveal>
         ))}
       </div>
