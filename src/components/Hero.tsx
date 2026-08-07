@@ -1,15 +1,20 @@
 import heroProfile from '@/heroprofile.svg'
 import { Cloud, Sakura} from './decor'
 
-
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[50svh] flex-col justify-center overflow-hidden pt-8 pb-8 sm:pt-28"
+      className="relative flex min-h-[50svh] flex-col justify-center overflow-hidden pt-28 pb-8 sm:pt-32"
     >
-      <Cloud src="left" className="-top-20 -left-36 w-[380px] opacity-90 sm:-left-24 sm:w-[460px]" />
-      <Cloud src="right" className="top-4 -right-28 w-[320px] opacity-90 sm:-right-12 sm:w-[420px]" />
+      <Cloud 
+        src="left" 
+        className="-left-20 -top-10 w-[240px] opacity-90 sm:-left-24 sm:-top-20 sm:w-[460px]" 
+      />
+      <Cloud 
+        src="right" 
+        className="-right-16 top-16 w-[200px] opacity-90 sm:-right-12 sm:top-4 sm:w-[420px]" 
+      />
 
       <div className="relative mx-auto w-full max-w-[1200px] px-5 sm:px-8">
         <div className="relative mx-auto w-[min(360px,72vw)] sm:w-[min(400px,54vw)]">
@@ -27,7 +32,7 @@ export default function Hero() {
             Hi, I am <em className="italic">Shreya</em>
           </h1>
           <p className="text-[clamp(1rem,2.6vw,1.25rem)] font-medium text-ink">UI/UX Designer</p>
-          <Sakura className="size-8" />
+          <Sakura className="mt-2 size-8" />
         </div>
       </div>
     </section>
