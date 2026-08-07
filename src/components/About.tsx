@@ -45,13 +45,13 @@ export default function About() {
             <p>
               My design journey started with a random fascination for logos back
               in 2019. I even made a few logos using a logo generator app, lol.
-              In 2022, In 2022, I joined college as a Computer Science student,
+              In 2022, I joined college as a Computer Science student,
               thinking I’d mostly be spending my time coding. Somewhere along
               the way, I discovered Canva and eventually found Figma, a tool I
               now spend most of my time on.
             </p>
             <p>
-              Since then, I’ve been designing, experimenting, building, and constantly learning. Being a CS student has also made me curious about the space between design and technology, how something can not only look good but also work well and feel right to the people using it.
+              Since then, I’ve been designing, experimenting, and constantly learning. Being a CS student has also made me curious about the space between design and technology, how something can not only look good but also work well and feel right to the people using it.
             </p>
           </div>
 
