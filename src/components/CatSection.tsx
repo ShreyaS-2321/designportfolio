@@ -11,10 +11,8 @@ export default function CatSection() {
       <div className="relative mx-auto flex w-full max-w-[1200px] flex-col items-center gap-6 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
         <Reveal className="relative md:w-[48%]">
           {/* decorative annotation: sits above the phrase and sweeps toward it, never over the letters */}
-          <p className="font-serif text-[clamp(1.75rem,4.5vw,2.5rem)] leading-[1.15] italic text-ink">
-            I love cats and
-            <br />
-            meow like them 
+          <p className="font-serif text-[clamp(1.75rem,4.5vw,2.5rem)] leading-[1.15] text-ink">
+            My <span className="italic">meow</span> personality
           </p>
           <p className="mt-4 max-w-[650px] text-[clamp(0.9375rem,1.25vw,1.0625rem)] leading-relaxed text-ink/80">
             I’ve a cat-like personality. I meow in the middle of conversations, and somehow find a way to bring cats into everything. I’ve loved shrimp since I was little, and I used to sneak into the kitchen and eat things from the fridge while everyone was asleep. So, my dad has always said that I’m very cat-like.
