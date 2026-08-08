@@ -43,8 +43,6 @@ export default function About() {
 
           <div className="mt-4 flex  flex-col gap-3.5 text-[clamp(0.9375rem,1.25vw,1.0625rem)] leading-relaxed text-ink/90">
             <p>
-              My design journey started with a random fascination for logos back
-              in 2019. I even made a few logos using a logo generator app, lol.
               In 2022, I joined college as a Computer Science student,
               thinking I’d mostly be spending my time coding. Somewhere along
               the way, I discovered Canva and eventually found Figma, a tool I
