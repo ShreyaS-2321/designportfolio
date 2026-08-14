@@ -44,13 +44,18 @@ export default function About() {
 
           <div className="mt-4 flex  flex-col gap-3.5 text-[clamp(0.9375rem,1.25vw,1.0625rem)] leading-relaxed text-ink/90">
             <p>
-              In 2022, I joined college as a Computer Science student,
-              thinking I’d mostly be spending my time coding. Somewhere along
-              the way, I discovered Canva and eventually found Figma, a tool I
-              now spend most of my time on.
+              In 2022, I joined college as a Computer Science student, thinking
+              I would mostly be spending my time coding. Along the way, I
+              discovered Canva and eventually found Figma. I started designing
+              out of curiosity and soon realised how much I genuinely enjoyed
+              it.
             </p>
             <p>
-              Since then, I’ve been designing, experimenting, and constantly learning. Being a CS student has also made me curious about the space between design and technology, how something can not only look good but also work well and feel right to the people using it.
+              I like to understand the <b className=" font-serif italic">why</b> before jumping into the <b className="font-serif italic">how</b>. I notice
+              small things, ask questions, and explore different ideas before
+              settling on one. For me, good design is not just about looking
+              good, it is about making things work better for the people using
+              them.
             </p>
           </div>
 
