@@ -31,7 +31,7 @@ export default function Hero() {
           <h1 className="font-serif text-[clamp(1.875rem,5.5vw,2.5rem)] leading-tight text-ink">
             Hi, I am <em className="italic">Shreya</em>
           </h1>
-          <p className="text-[clamp(1rem,2.6vw,1.25rem)] font-medium text-ink">UI/UX Designer</p>
+          <p className="text-[clamp(1rem,2.6vw,1.25rem)] font-serif text-ink">I notice. I question. I design.</p>
           <Sakura className="mt-2 size-8" />
         </div>
       </div>
