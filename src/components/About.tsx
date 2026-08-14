@@ -2,6 +2,7 @@ import imgCanva from "@/imports/Frame37/cf7119921455338a45531b57e11d9ae68aee47db
 import imgClaude from "@/imports/Frame37/86abb1710ae8235f1a5af50ea1c36223ce30dc62.png";
 import imgGemini from "@/imports/Frame37/d63c4d2b3f4aa6163f936e8c3c1632feb32f37bc.png";
 import imgNotion from "@/imports/Frame37/db8ae21655c7793eab04588a83ee961caf2e541a.png";
+import imgVscode from "@/vscode.webp";
 import Reveal from "./Reveal";
 import {
   FigmaMark,
@@ -87,6 +88,13 @@ export default function About() {
               <img
                 alt=""
                 src={imgNotion}
+                className="size-full object-contain"
+              />
+            </Tool>
+            <Tool name="VS Code">
+              <img
+                alt=""
+                src={imgVscode}
                 className="size-full object-contain"
               />
             </Tool>
