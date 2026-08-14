@@ -114,7 +114,7 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div
-        className="-mt-9 h-[280px] overflow-hidden rounded-[22px] sm:-mt-12 sm:h-[380px]"
+        className="-mt-9 h-[280px] overflow-hidden rounded-[22px] sm:-mt-16 sm:h-[380px]"
         style={{ backgroundColor: project.tint }}
       >
         <img
