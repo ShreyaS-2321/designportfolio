@@ -55,6 +55,36 @@ export default function About() {
           </div>
 
           <h2 className="mt-7 text-[15px] font-medium tracking-wide text-ink/70 uppercase">
+            My Skills
+          </h2>
+          <ul className="mt-3.5 flex flex-wrap items-center gap-3 sm:gap-4">
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              User Research
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              Wireframing
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              Prototyping
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              Visual Design
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              Empathy & Communication
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              Problem Solving
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              HTML & CSS
+            </li>
+            <li className="flex h-8 items-center rounded-[33px] border border-ink/15 px-3.5 text-[13px] text-ink transition-colors hover:bg-ink hover:text-white">
+              JavaScript
+            </li>
+          </ul>
+
+          <h2 className="mt-7 text-[15px] font-medium tracking-wide text-ink/70 uppercase">
             My Tools
           </h2>
           <ul className="mt-3.5 flex flex-wrap items-center gap-3 sm:gap-4">
