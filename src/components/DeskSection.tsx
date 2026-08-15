@@ -93,7 +93,7 @@ export default function DeskSection() {
 
         <Reveal className="mt-5">
           <p className="max-w-[560px] font-serif text-[clamp(1.5rem,3.4vw,2rem)] leading-[1.2] text-ink">
-            A little corner for the things I like when I’m not designing.
+            A little corner for the things I like when I’m <em className="italic">not</em> designing.
           </p>
         </Reveal>
 
