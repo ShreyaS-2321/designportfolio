@@ -4,7 +4,7 @@ import imgAvatar from "@/imports/Frame37/f62c229b36b33a89fe6d879c925541bcfcf44d8
 const LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
+  { label: "Work", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
