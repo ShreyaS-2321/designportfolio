@@ -108,7 +108,7 @@ function ProjectCard({ project }: { project: Project }) {
           rel="noreferrer"
           className="mt-5 inline-flex h-9 items-center gap-1.5 rounded-[33px] bg-ink px-4 text-[13px] text-white transition-transform duration-300 transform-gpu hover:-translate-y-0.5"
         >
-          View Project
+          View
           <ExternalArrowIcon className="size-4" />
         </a>
       </div>
@@ -134,7 +134,7 @@ export default function Projects() {
 
   return (
     <section className="relative mx-auto w-full max-w-[1200px] px-5 sm:px-8">
-      <SectionLabel id="projects">Projects</SectionLabel>
+      <SectionLabel id="projects">Work</SectionLabel>
 
       {/* Category Selector */}
       <div className="mt-6 flex justify-center">
