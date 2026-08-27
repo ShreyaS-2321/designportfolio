@@ -14,7 +14,7 @@ const BOOKS = [
   {
     title: 'The Palace of Illusions',
     label: 'Reading now',
-    note: 'If you like mythology, you will love this! A retelling of the Mahabharata from Draupadi’s perspective.',
+    note: 'After reading 75% of The Palace of Illusions, I feel it’s more about how the author wanted Draupadi to be than a retelling from her perspective. The Draupadi–Karna romance feels more like the author’s creation than something from the original Mahabharata.',
     image: book1,
     alt: 'An open book resting on a bed',
     tilt: '-rotate-2',
