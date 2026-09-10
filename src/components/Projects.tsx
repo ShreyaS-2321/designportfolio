@@ -3,6 +3,7 @@ import imgHalo from '@/project1.png'
 import imgGpay from '@/project2.svg'
 import imgMotion1 from '@/motion1.png'
 import imgMotion2 from '@/motion2.png'
+import imgMotion3 from '@/motion3.gif'
 import Reveal from './Reveal'
 import { ExternalArrowIcon, SectionLabel } from './decor'
 
@@ -75,6 +76,18 @@ const PROJECTS: Project[] = [
     alt: 'Doraemon vector illustrations with meme animation',
     tint: '#f0fdf4', 
     url: 'https://www.figma.com/community/file/1669415833724828642/doraemon-vector-illustration-grinning-droopy-animation',
+    category: 'Figma Motion',
+  },
+  {
+    id: 'motion-3',
+    title: 'Figma Motion — Summer Camp with Miggi',
+    blurb: 'Created these bear, cat and some other small illustrations from scratch in Figma and brought them to life with Figma Motion!',
+    year: '2026',
+    tools: 'Figma',
+    image: imgMotion3,
+    alt: 'Figma Summer Camp animation with Miggi',
+    tint: '#f0fdf4', 
+    url: 'https://www.figma.com/community/file/1679872834548274076',
     category: 'Figma Motion',
   },
 ]
