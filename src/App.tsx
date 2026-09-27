@@ -15,7 +15,7 @@ export default function App() {
         <Hero />
         <GreetingMarquee />
         <About />
-        <CatSection />
+        {/* <CatSection /> */}
         <Projects />
         <DeskSection />
         <Contact />
