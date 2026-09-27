@@ -4,6 +4,7 @@ import imgGpay from '@/project2.svg'
 import imgMotion1 from '@/motion1.png'
 import imgMotion2 from '@/motion2.png'
 import imgMotion3 from '@/motion3.gif'
+import imgTeardown1 from '@/uxt1.png'
 import Reveal from './Reveal'
 import { ExternalArrowIcon, SectionLabel } from './decor'
 
@@ -90,6 +91,19 @@ const PROJECTS: Project[] = [
     url: 'https://www.figma.com/community/file/1679872834548274076',
     category: 'Figma Motion',
   },
+
+  // --- UX TEARDOWN PROJECTS ---
+  {id: 'ux-teardown-1',
+    title: 'YONO SBI UX Teardown',
+    blurb: 'A UX teardown exploring the reasoning, security, and usability behind YONO SBI’s randomized MPIN keypad.',
+    year: '2026',
+    tools: 'Figma, Notion',
+    image: imgTeardown1,
+    alt: 'YONO SBI UX teardown',
+    tint: '#f4efff',
+    url: 'https://www.behance.net/gallery/256319873/YONO-SBI-UX-Teardown',
+    category: 'UX Teardown',
+  },
 ]
 
 function ProjectCard({ project }: { project: Project }) {
@@ -146,7 +160,7 @@ export default function Projects() {
   const filteredProjects = PROJECTS.filter((p) => p.category === activeCategory)
 
   return (
-    <section className="relative mx-auto w-full max-w-[1200px] px-5 sm:px-8">
+    <section className="relative mx-auto w-full max-w-[1200px] px-5 sm:px-8 py-14 sm:py-20">
       <SectionLabel id="projects">Work</SectionLabel>
 
       {/* Category Selector */}
@@ -172,12 +186,14 @@ export default function Projects() {
       {/* Content Area */}
       <div className="mt-10 min-h-[400px]">
         {activeCategory === 'UX Teardown' ? (
-          <Reveal>
-            <div className="flex h-[380px] w-full flex-col items-center justify-center rounded-[24px] border border-dashed border-ink/20 bg-white/40 px-6 text-center shadow-sm">
-              <h3 className="font-serif text-2xl text-ink">UX Teardowns</h3>
-              <p className="mt-2 text-[15px] italic text-ink/60">Writing in progress. Check back soon!</p>
-            </div>
-          </Reveal>
+          /* UX Teardown Grid */
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-8 animate-[fade-in_400ms_ease-out]">
+            {filteredProjects.map((project, index) => (
+              <Reveal key={project.id} delay={index * 90}>
+                <ProjectCard project={project} />
+              </Reveal>
+            ))}
+          </div>
         ) : (
           /* Projects Grid */
           <div key={activeCategory} className="grid gap-10 lg:grid-cols-2 lg:gap-8 animate-[fade-in_400ms_ease-out]">
