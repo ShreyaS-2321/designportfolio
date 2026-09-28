@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import imgAvatar from "@/imports/Frame37/f62c229b36b33a89fe6d879c925541bcfcf44d8e.png";
+import resume from "@/Resume.pdf";
 
 const LINKS = [
   { label: "Home", href: "#home" },
@@ -54,7 +55,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="/Resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 items-center justify-center rounded-[33px] bg-ink px-4 text-[14px] text-white transition-transform hover:-translate-y-0.5 sm:text-[15px]"
